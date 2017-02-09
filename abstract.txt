@@ -1,22 +1,23 @@
 Wissenschaftliche Erkenntnis, Reproduzierbarkeit und praktische Lösungen in der
 Akustik
 
+Hagen Wierstorf, Sascha Spors, Matthias Geier
+
 Reproduzierbarkeit von Ergebnissen stellt eines der wichtigsten Fundamente der
-Wissenschaft dar, auch wenn diese das Problem des induktiven Beweises mit sich
-bringt und nicht immer leicht quantifizierbar ist (Lewens, 2015). Der Begriff
-der Reproduzierbarkeit kann dabei einen weiten Bereich umfassen, angefangen von
-bloßer Replikation von Ergebnissen eines Algorithmus (Drummond, 2009) bis hin zu
-der Etablierung der Ergebnisse durch deren erfolgreiche Verwendung in vielen
-anderen wissenschaftlichen Publikationen (Charlton, 2007). Die stetige Zunahme
-wissenschaftlicher Publikationen bei gleichzeitig steigender Abhängigkeit der
-Ergebnisse von großen Datenmengen, statistischer Analyse, numerischer Simulation
-und umkämpften Fördergeldern führen unweigerlich zu der Frage, ob dies
-Auswirkungen auf die Reproduzierbarkeit hat. Zumal einige medizinische Studien
-ein erschreckend geringes Maß an Reproduzierbarkeit gezeigt haben (z.B.
-Ioannidis, 2005). Dieser Beitrag geht der Frage nach wie ein solches Problem in
-der Akustik verhindert werden kann. Dazu stellt es ein exemplarisches Projekt
-aus der Schnittstelle zwischen der virtuellen Akustik und Psychoakustik vor und
-zeigt wie mit unterschiedlichen Tools (R, python, Jupyter, SOFA, zenodo) die
-Reproduzierbarkeit sowohl auf Ebene der Replikation als auch im Hinblick auf den
-gemeinsamen wissenschaftlichen Fortschritt in der Akustik verbessert werden
-kann.
+Wissenschaft dar. Die stetige Zunahme wissenschaftlicher Publikationen bei
+gleichzeitig steigender Abhängigkeit der Ergebnisse von großen Datenmengen,
+statistischer Analyse, numerischer Simulation und umkämpften Fördergeldern
+führen unweigerlich zu der Frage, ob dies Auswirkungen auf die
+Reproduzierbarkeit hat. Zumal in letzter Zeit einige medizinische Studien ein
+erschreckend geringes Maß an Verifizierbarkeit gezeigt haben.  Dieser Beitrag
+diskutiert Abstufungen der Reproduzierbarkeit und ihren Zusammenhang mit der
+wissenschaftlichen Methodik. Es wird ein kritischer Blick in die Akustik,
+insbesondere auf die teilweise unreflektierte Anwendung von Numerik und
+Statistik geworfen. Dabei wird an Hand eines exemplarischen Projektes aus der
+virtuellen Akustik diskutiert, ob und wie sich diese Probleme mit der
+konsequenten Anwendung der Prinzipien von Open Science verbessern lassen. Es
+werden unterschiedliche Tools (R, python, Jupyter, SOFA, zenodo) benutzt, um die
+Reproduzierbarkeit zu erhöhen und vorgestellt wie eine langfristig Alternative
+zu dem jetzigen Format einer wissenschatflichen Zeitschrift-Veröffentlichung
+aussehen könnte.
+
