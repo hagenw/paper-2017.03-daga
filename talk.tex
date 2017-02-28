@@ -4,10 +4,11 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
+\usepackage{array,multirow}
 
-%\graphicspath{%
-%{05_psychoacoustics/}%
-%}
+\graphicspath{%
+{figs/}%
+}
 
 
 
@@ -18,16 +19,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Wissenschaftliche Erkenntnis, Reproduzierbarkeit und praktische Lösungen
 in der Akustik}
-\subtitle{Hagen Wierstorf$\;^1$\\Sascha Spors$\,^2$\\Matthias Geier$\,^2$\\%
+\subtitle{Hagen Wierstorf$\;^1$, Sascha Spors$\,^2$, Matthias Geier$\,^2$\\%
           \vspace{0.5cm}%
           \footnotesize{%
           $^1\,$Filmuniversität Bablesberg \emph{KONRAD WOLF}\\%
           $^2\,$Institut für Nachrichtentechnik, Universität Rostock}}
+\author{Hagen Wierstorf$\,$\inst{1} \and
+        Sascha Spors\inst{2} \and
+        Matthias Geier\inst{2}}
+\institute{\inst{1} Filmuniversität Bablesberg \emph{KONRAD WOLF}\\
+           \inst{2} Institut für Nachrichtentechnik, Universität Rostock}
 \date{07.03.2017}
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Motivation}
+
+    Daten zeigen wie oft in Medizin oder Psychologie veröffentlichte Ergebnisse
+    nicht reproduziert werden konnten.
 
 \end{frame}
 
@@ -39,10 +48,14 @@ in der Akustik}
             \small{Dachs ist ein Säugetier\\%
                    Dieter ist ein Dachs\\%
                    $\Rightarrow$ Dieter ist ein Säugetier}
+    \end{itemize}
+    \begin{itemize}
         \item \textbf{Induktiv:} \\
             \small{Medikament hatte keine Nebenwirkung an $100\,000$ getesteten
                    Menschen.\\%
                    Kann sicher verwendet werden.}
+    \end{itemize}
+    \begin{itemize}
         \item \textbf{Computer Simulation:} \dots
     \end{itemize}
 
@@ -51,7 +64,7 @@ in der Akustik}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Wann ist etwas Wissenschaft?}
 
-    Überprüfung einer Aussage durch Falsifizierbarkeit
+    Überprüfung einer Aussage durch \textbf{Falsifizierbarkeit}
     \begin{quote}
         If it disagrees with experiment, it's wrong. In that simple statement is
         the key to science.
@@ -62,10 +75,10 @@ in der Akustik}
     \vspace{1cm}
 
     \begin{itemize}
-        \item Nicht automatisch Widerlegung einer Theorie (Gran Sasso)
+        \item Nicht automatisch Widerlegung einer Theorie (Gran Sasso, 2011)
         \item Kann als Abgrenzung von Pseudowissenschaften verwendet werden
             (Astronomie)
-        \item Reproduzierbarkeit von Ergebnissen wichtig
+        \item \textbf{Reproduzierbarkeit} von Ergebnissen wichtig
     \end{itemize}
 
 \end{frame}
@@ -73,42 +86,132 @@ in der Akustik}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Gründe für Nicht-Reproduzierbarkeit}
 
+    \vspace{-0.5cm}
+
+    \begin{figure}
+        \centering
+        \begin{tikzpicture}
+            \draw (-4, 2.0) node {\includegraphics[width=2cm]{data_dredging}};
+            \draw (-4, 1.1) [text width=4cm,align=center,anchor=north] node
+                {\textbf{Datenmelken}\\
+                 \sm Suchen nach signifikanten Ergebnissen\par};
+            \draw ( 0, 2.0) node {\includegraphics[width=2cm]{omitting_null_results}};
+            \draw ( 0, 1.1) [text width=4cm,align=center,anchor=north] node
+                {\textbf{Positiver Bias}\\
+                 \sm Nur positive Ergebnisse werden publiziert\par};
+            \draw ( 4, 2.0) node {\includegraphics[width=2cm]{underpowered_study}};
+            \draw ( 4, 1.1) [text width=4cm,align=center,anchor=north] node
+                {\textbf{Teilnehmerzahl}\\
+                 \sm Zu wenig statistische Power für Effekstärke\par};
+            \draw (-4,-1.4) node {\includegraphics[width=2cm]{errors}};
+            \draw (-4,-2.3) [text width=4cm,align=center,anchor=north] node
+                {\textbf{Fehler}\\
+                 \sm Technische oder Programmierfehler\par};
+            \draw ( 0,-1.4) node {\includegraphics[width=2cm]{underspecified_method}};
+            \draw ( 0,-2.3) [text width=4cm,align=center,anchor=north] node
+                {\textbf{Unklare Methode}\\
+                 \sm Methode ungenügend beschrieben\par};
+            \draw ( 4,-1.4) node {\includegraphics[width=2cm]{weak_experimental_design}};
+            \draw ( 4,-2.3) [text width=4cm,align=center,anchor=north] node
+                {\textbf{Schlechtes Design}\\
+                 \sm Experiment hat systematische Fehler\par};
+        \end{tikzpicture}
+    \end{figure}
+
+    {\ft\hfill Abbildung basierend auf The Academy of Medical Sciences (2015)}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Statistik}
+
+    Gehe auf folgende Punkte ein
+
+    \begin{itemize}
+        \item p-Hacking
+        \item Wie Wahrscheinlich sind false-positives
+        \item Vergleich Neurowissenschaften vs. Teilchenphysik
+        \item \dots
+    \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Auswege}
 
+    \begin{tabular}{>{\raggedright}p{5.5cm}l}
+        \textbf{Open Science} & \multirow{2}{2cm}{%
+            \includegraphics[width=1cm]{data_dredging}
+            \includegraphics[width=1cm]{omitting_null_results}
+            \includegraphics[width=1cm]{errors}
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        Daten, Software und Methoden & \\[1em]
+        \textbf{Pre-Registrierung} & \multirow{2}{2cm}{%
+            \includegraphics[width=1cm]{data_dredging}
+            \includegraphics[width=1cm]{omitting_null_results}
+            \includegraphics[width=1cm]{underpowered_study}
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        des Versuches (und Review) & \\[1em]
+        \textbf{Zusammenarbeit} & \multirow{2}{*}{%
+            \includegraphics[width=1cm]{underpowered_study}
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        unterschiedlicher Arbeitsgruppen & \\[1em]
+        \textbf{Post-publication review} & \multirow{2}{*}{%
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        Diskussion und Verbesserungen & \\[1em]
+        \textbf{Statistische Fortbildung} & \multirow{2}{*}{%
+            \includegraphics[width=1cm]{data_dredging}
+            \includegraphics[width=1cm]{omitting_null_results}} \\
+        & \\
+    \end{tabular}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Neue Publikationswege}
+\begin{frame}{Beispiel: Open Science in der Akustik}
 
-    Dies hat technische und prinzipielle Komponenten.
+    Studien-Ziel: Qualität verschiedener Audiowiedergabeverfahren miteinander
+    vergleichen
+
+    \textbf{Daten}
+    \begin{itemize}
+        \item Ausgangs Audiomaterial
+        \item Gemischtes Audiomaterial/Lautsprechersignale
+        \item HRTFs (bei binauraler Simulation der Lautsprecher)
+        \item Roh-Daten aus dem Hörversuch
+    \end{itemize}
+
+    \textbf{Software}
+    \begin{itemize}
+        \item Implementation Wiedergabeverfahren (z.B. Wellenfeldsynthese)
+        \item Implementation Binauralsynthese
+        \item \dots
+    \end{itemize}
+
+    \textbf{Methoden}
+    \begin{itemize}
+        \item GUI für den Hörversuch
+        \item Instruktionen für die Versuchspersonen
+        \item Statistische Auswertung
+    \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Bibliography}
+\begin{frame}{Beispiel: Open Science in der Akustik}
 
-    \ft
-    \begin{thebibliography}{36}
-         \bibitem[10]{Lindosland2011}
-            Lindosland, Wikimedia Commons, Public Domain, 2011.
-        \bibitem[11]{Mills1958}
-            Mills, A. W. (1958). On the minimum audible angle. J. Acoust. Soc.
-            Am., 30(4), 237--46.
-        \bibitem[12]{Blauert1997}
-            Blauert, J. (1997). Spatial Hearing. The MIT Press.
-        \bibitem[13]{Mills1972}
-            Mills, A. W. (1972). Auditory Localization. In Tobias, J. V. (Ed.),
-            Foundations of Modern Auditory Theory (Vol. II), Academic Press.
-    \end{thebibliography}
-           
+    \begin{itemize}
+        \item Erwähnen, dass es interessant wäre dies direkt ins Paper zu
+            integrieren ($\Rightarrow$ Jupyter)
+        \item Beispiel zeigen wie die einzelnen Punkte gelöst worden sind
+        \item Wie am besten? Mit verweisen auf veröffentlichte Software/Daten
+            und Screenshots?
+    \end{itemize}
+
 \end{frame}
 
 \end{document}

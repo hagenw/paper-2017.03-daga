@@ -45,7 +45,6 @@
 \definecolor{red2}  {HTML} {F2645D}
 \definecolor{black} {HTML} {414042}
 \definecolor{gray}  {HTML} {A7A9AC}
-%\definecolor{gray1} {HTML} {999999} % gray from Telekom slides
 \definecolor{blue}  {HTML} {0083C3} % blue from Two!Ears
 % Applying colors
 \setbeamercolor{alerted text}{fg=blue}
@@ -71,12 +70,10 @@
 
 
 %% ----- Frame title -----
-\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{frametitle}{fg=black}
 \setbeamertemplate{frametitle}
 {
-  \begin{beamercolorbox}{frametitle}
-    \colorbox{red}{\fontfamily{\rmdefault}\selectfont\insertframetitle}
-  \end{beamercolorbox}
+  \fontfamily{\rmdefault}\selectfont\insertframetitle\par%
   {%
     \ifx\insertframesubtitle\@empty%
     \else%
@@ -88,30 +85,22 @@
 
 
 %% ----- Title page -----
-\setbeamercolor{title}{fg=white,bg=red2}
+\setbeamercolor{title}{fg=black,bg=white}
 \defbeamertemplate*{title page}{avad}[1][]
 {
-  \hspace{0.1cm}
-  \begin{tikzpicture}[overlay] % white part of title page
-    \fill[white] (0,-10) rectangle (2,2);
-    \node[align=left,font=\fontsize{7}{9}\selectfont] at (1,-7.78)
-      {\insertdate}; % date / author
-    \node at (1.08,-8.3)
-      {\includegraphics[width=2cm]{filmuniversitaet}}; % logo
-  \end{tikzpicture}
   \vbox{}
   \vskip2em\par
   \begin{centering}
     \begin{beamercolorbox}[sep=8pt,#1]{title}% title
       \vspace{0.1cm}\par
       \fontfamily{\rmdefault}\fontsize{20}{22}\selectfont\inserttitle\par%
-      \vspace{-0.35cm}\par
-      \begin{tikzpicture}[overlay]
-        \node[text width=8cm,font=\fontsize{11}{15}\selectfont] at (7,-3)
-          {\itshape\insertsubtitle\par};%
-      \end{tikzpicture}
+      \vspace{0.75cm}\par%
+      \fontfamily{\sfdefault}\fontsize{11}{15}\selectfont\insertauthor\par%
+      \vspace{1cm}\par%
+      \fontsize{10}{13}\selectfont\insertinstitute\par%
     \end{beamercolorbox}%
-    \vskip13em\par
+    \vskip3em\par
+    \fontsize{7}{9}\selectfont\insertdate\par%
   \end{centering}
 }
 \addtobeamertemplate{title page}{}{\addtocounter{framenumber}{-1}}
@@ -119,7 +108,7 @@
 \def\maketitle{\ifbeamer@inframe\titlepage\else
 {
 \setbeamertemplate{page number in head/foot}{}
-\setbeamertemplate{background canvas}{\color{red2}\rule{\paperwidth}{\paperheight}}
+\setbeamertemplate{background canvas}{\color{white}\rule{\paperwidth}{\paperheight}}
 \frame{\titlepage}
 }\fi}
 
