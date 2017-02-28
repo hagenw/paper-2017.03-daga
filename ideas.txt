@@ -1,0 +1,72 @@
+1. Was ist wissenschaftliche Methodik
+    * Da sollte man auch darauf hinweisen, dass wissenshaftliche Methodik nicht
+      automatisch bedeutet, dass es sich wirklich um wissenschaft handelt.
+      (Ioannidis 2012 führt zm Beispiel Phrenologie, Eugenik und die Studien der
+      Zigaretten-Industrie zu den Folgen des Rauchens an).
+    * Wie diskutiere ich am besten was eigentlich Wissenschaft ist? Vielleicht
+      kurz auf das Problem der benötigten induktiven Schlussfolgerung eingehen
+      und dies anführen um zu erwähnen, das reproduzierbarkeit wichtig ist.
+2. Typen der Reproduzierbarkeit wieder aufnehmen?
+    * Um Reproduzierbarkeit besser zu motivieren, könnte man Daten dazu
+      aufnehmen, wie viel Prozent von Studien in bestimmten Feldern nicht
+      reproduziert werden konnte. Dies sollte Motivation genug sein, dass ein
+      bloßes Publizieren im Paper nicht mehr reicht. [Hier könnte man auch schon
+      einen Verweis darauf bringen, dass man ein besseres Veröffenlichungsmodell
+      benötigt um Fehler in der Publikation zu verbessern. Im Moment besteht das
+      Problem, dass man nicht leicht kleine Verbesserungen publizieren kann,
+      sondern eher das ganze Paper widerrufen muss.]
+    * Hier könnte man auch mögliche Gründe mit anführen, warum es so einen hohen
+      Anteil gibt (siehe Tab. 2 Ioannidis 2012).
+3. Unterschied zwischen Reproduzierbarkeit derselben Ergebnisse/Abbildungen und
+   Reproduzierbarkeit im Sinne der Verallgemeinerung (Induktion) erklären
+4. Beispiel WFS mixing Versuch (Vortrag von Chris auf DAGA):
+    SFS Python Numerik Plot [Python, Jupyter]
+    (SFS Matlab Skript zum Erzeugen der Stimuli) [SOFA, zenodo]
+    Python+R Skript zur statischen Auswertung [Python, R, Jupyter?]
+
+
+Neuere Anmerkungen:
+
+* Auf Statistik und die Prolematik mit dem p-Wert eingehen
+  (Beispiel Teilchenphysik vs. fMRT)
+* Auf neue Arten der Publikation eingehen
+  - Das hat eine technische (Jupyter, etc.) und eine inhaltliche
+    (preregistration, post-publication review) Komponente
+* Auf Problem der fehlenden Infrastruktur für Daten eingehen. Dies vielleicht im
+  Zusammenhang mit dem Beispiel?
+
+
+Anmerkungen zu Papern
+=====================
+
+Ioannidis 2012, Why Science Is Not Necessarily Self-Correcting
+--------------------------------------------------------------
+
+* Er vergleicht das Verschwinden von Wissen durch die Verwüstung der Bibliothek
+  von Alexandria mit dem Problem, dass für die meisten der heute publizierten
+  Paper keine daten etc. verfügbar sind und sagt, dass die meisten nicht
+  reproduziert werden können. Hier taucht das problem der Definition von
+  reproduzierbarkeit auf [das sollte ich am Anfang des Vortrags wider
+  aufgreifen; ich tippe es sollte auch bei Sascha schon vorkommen]. Es gibt ja
+  einen Unterschied zwischen dem exakten reproduzieren der Ergebnisse, die das
+  Paper präsentiert und ihre Reproduzierbarkeit, in dem das Experiment an hand
+  des Papers versucht wird nachzubauen. Ich würde hier vielleicht argumentieren,
+  dass letzteres immer schwieriger wird und man Fehler nur vernünftig suchen
+  kann, wenn der Originalcode etc. auch veröffentlicht ist.
+* Er führt das Prinzip eines "null-field" ein. In diesem sind keine von Null
+  unterschiedlichen Effekte mehr zu entdecken und alle Entdeckungen, die gemahct
+  werden beruhen auf zufälligen oder systematischen Fehlern. Das Problem ist,
+  dass Wissenschaftler nicht automatishc merken, dass sie in einem "null-field"
+  tätig sind.
+* Die Anzahl wissenschaftlicher entdeckungen wird immer größer und damit auch
+  das Finden von wirklichen Effekten. Es ist aber trotzdem problematisch, da es
+  durchaus sein kann, dass das Finden von falschen Effekten schneller wächst als
+  das Entdecken von wirklichen Effekten.
+* In Psychologie ungefähr 56% der gefunden Effekte könnten false positives sein
+* Viele Studien in Psychologie haben eine zu geringe Anzahl an Probanden
+  (underpowered). Dies erhöht leider auch die Wahrscheinlichkeit false positives
+  zu berichten und die größe des gefundenen Effekts zu überschätzen.
+* Einfach nur alle Daten aus Experimenten offen zu machen (Open Data) muss nicht
+  automatisch zu einer Besserung des beschriebenen Zustand führen, da es auch
+  sein kann, dass die neu verfügbare Datenflut zu einer Flut von Data dredging
+  führt.
