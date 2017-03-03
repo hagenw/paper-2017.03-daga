@@ -19,15 +19,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Wissenschaftliche Erkenntnis, Reproduzierbarkeit und praktische Lösungen
 in der Akustik}
-\subtitle{Hagen Wierstorf$\;^1$, Sascha Spors$\,^2$, Matthias Geier$\,^2$\\%
-          \vspace{0.5cm}%
-          \footnotesize{%
-          $^1\,$Filmuniversität Bablesberg \emph{KONRAD WOLF}\\%
-          $^2\,$Institut für Nachrichtentechnik, Universität Rostock}}
 \author{Hagen Wierstorf$\,$\inst{1} \and
         Sascha Spors\inst{2} \and
         Matthias Geier\inst{2}}
-\institute{\inst{1} Filmuniversität Bablesberg \emph{KONRAD WOLF}\\
+\institute{\inst{1} Filmuniversität Babelsberg \emph{KONRAD WOLF}\\
            \inst{2} Institut für Nachrichtentechnik, Universität Rostock}
 \date{07.03.2017}
 \maketitle
@@ -40,18 +35,23 @@ in der Akustik}
     \begin{itemize}
         \item Psychologie: nur $47$\% reproduzierbare Studien ($N=100$)\footnote{%
             Open Science Collaboration (2015), \emph{Science},
-            doi:10.1126/science.aac4716}
+            \href{https://doi.org/10.1126/science.aac4716}{10.1126/science.aac4716}}
         \item Pharmazie: nur $21$\% reproduzierbare Studien ($N=120$)\footnote{%
             Prinz, et al. (2011), \emph{Nature Reviews Drug Discovery},
-            doi:10.1038/nrd3439-c1}\textsuperscript{,}\footnote{%
+            \href{https://doi.org/10.1038/nrd3439-c1}{10.1038/nrd3439-c1}}%
+            \textsuperscript{,}\footnote{%
             Begley \& Ellis (2012), \emph{Nature},
-            doi:10.1038/483531a}
+            \href{https://doi.org/10.1038/483531a}{10.1038/483531a}}
         \item Genetik: $44$\% reproduzierbare Datenanalyse ($N=18$)\footnote{%
             Ioannidis, et al. (2009), \emph{Nature Genetics},
-            doi:10.1038/ng.295}
+            \href{https://doi.org/10.1038/ng.295}{10.1038/ng.295}}
     \end{itemize}
 
-    Noch Links zu den gerade laufenden Studien/initiativen hinzufügen.
+    \begin{itemize}
+        \item Reproducibility Project: Cancer Biology\footnote{%
+            Errington, et al. (2017), \emph{Open Science Framework},
+            \href{https://osf.io/e81xl/}{osf.io/e81xl/}}
+    \end{itemize}
 
 \end{frame}
 
@@ -71,12 +71,15 @@ in der Akustik}
                    Kann sicher verwendet werden.}
     \end{itemize}
     \begin{itemize}
-        \item \textbf{Computer Simulation:} \\
-            \small{Numerik und große Datensätze (Beispiel?)}
-            Zitat Donoho (und Stodden)
-            $\Rightarrow$ heutige Praxis erzeugt in den meisten Fällen keine
-            zuverlässigen (reliable) Ergebnisse
-
+        \item \textbf{Computer Simulation:}\footnote{%
+            Donoho, et al. (2009), \emph{Computing in Science \& Engineering},
+            \href{https://doi.org/10.1109/MCSE.2009.15}{10.1109/MCSE.2009.15}}%
+            \textsuperscript{,}\footnote{%
+            Vandewalle, et al. (2009), \emph{IEEE Signal Processing Magazine},
+            \href{https://doi.org/10.1109/MSP.2009.932122}{10.1109/MSP.2009.932122}}
+            \\
+            \small{Numerik und große Datensätze.\\
+            Noch keine etablierte Verifizierbarkeit.}
     \end{itemize}
 
 \end{frame}
@@ -90,7 +93,9 @@ in der Akustik}
         the key to science.
     \end{quote}
 
-    {\ft\hfill R. Feynman zitiert nach T. Lewens (2015)}
+    {\ft\hfill R. Feynman\footnote{%
+    zitiert nach Lewens (2015), \emph{The Meaning of Science},
+    Pelican}\hspace{1cm}}
 
     \vspace{1cm}
 
@@ -111,27 +116,27 @@ in der Akustik}
     \begin{figure}
         \centering
         \begin{tikzpicture}
-            \draw (-4, 2.0) node {\includegraphics[width=2cm]{data_dredging}};
+            \draw (-4, 2.0) node {\includegraphics[width=1.8cm]{data_dredging}};
             \draw (-4, 1.1) [text width=4cm,align=center,anchor=north] node
                 {\textbf{Datenmelken}\\
                  \sm Suchen nach signifikanten Ergebnissen\par};
-            \draw ( 0, 2.0) node {\includegraphics[width=2cm]{omitting_null_results}};
+            \draw ( 0, 2.0) node {\includegraphics[width=1.8cm]{omitting_null_results}};
             \draw ( 0, 1.1) [text width=4cm,align=center,anchor=north] node
                 {\textbf{Positiver Bias}\\
                  \sm Nur positive Ergebnisse werden publiziert\par};
-            \draw ( 4, 2.0) node {\includegraphics[width=2cm]{underpowered_study}};
+            \draw ( 4, 2.0) node {\includegraphics[width=1.8cm]{underpowered_study}};
             \draw ( 4, 1.1) [text width=4cm,align=center,anchor=north] node
                 {\textbf{Teilnehmerzahl}\\
-                 \sm Zu wenig statistische Power für Effekstärke\par};
-            \draw (-4,-1.4) node {\includegraphics[width=2cm]{errors}};
+                 \sm Zu wenig statistische Power für Effektstärke\par};
+            \draw (-4,-1.4) node {\includegraphics[width=1.8cm]{errors}};
             \draw (-4,-2.3) [text width=4cm,align=center,anchor=north] node
                 {\textbf{Fehler}\\
                  \sm Technische oder Programmierfehler\par};
-            \draw ( 0,-1.4) node {\includegraphics[width=2cm]{underspecified_method}};
+            \draw ( 0,-1.4) node {\includegraphics[width=1.8cm]{underspecified_method}};
             \draw ( 0,-2.3) [text width=4cm,align=center,anchor=north] node
                 {\textbf{Unklare Methode}\\
                  \sm Methode ungenügend beschrieben\par};
-            \draw ( 4,-1.4) node {\includegraphics[width=2cm]{weak_experimental_design}};
+            \draw ( 4,-1.4) node {\includegraphics[width=1.8cm]{weak_experimental_design}};
             \draw ( 4,-2.3) [text width=4cm,align=center,anchor=north] node
                 {\textbf{Schlechtes Design}\\
                  \sm Experiment hat systematische Fehler\par};
@@ -145,13 +150,22 @@ in der Akustik}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Statistik}
 
-    Gehe auf folgende Punkte ein
-
+    \textbf{Probleme des $p$-Wertes}
     \begin{itemize}
-        \item p-Hacking
-        \item Wie Wahrscheinlich sind false-positives
-        \item Vergleich Neurowissenschaften vs. Teilchenphysik
-        \item \dots
+        \item Aussagekraft abhängig von statistischer Power\footnote{%
+            Ioannidis (2005), \emph{PLoS Med},
+            \href{https://doi.org/10.1371/journal.pmed.0020124}{10.1371/journal.pmed.0020124}%
+            \label{Ioannidis2005}}
+        \item Aussagekraft abhängig von Anzahl getesteter
+            Hypothesen\textsuperscript{\ref*{Ioannidis2005}}
+        \item Wahrscheinlichkeit eines echten Effektes hängt davon ab wie
+            wahrscheinlich die Hypothese war\footnote{%
+            Nuzzo (2014), \emph{Nature},
+            \href{https://doi.org/10.1038/506150a}{10.1038/506150a}}
+        \item Schlechte Reproduzierbarkeit auch bei guter statistischer
+            Power\footnote{%
+            Halsey, et al. (2015), \emph{Nature Methods},
+            \href{https://doi.org/10.1038/nmeth.3288}{10.1038/nmeth.3288}}
     \end{itemize}
 
 \end{frame}
