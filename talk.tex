@@ -278,7 +278,7 @@ in der Akustik}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Beispiel: Open Science in der Akustik}
 
-    Studien-Ziel: Evaluation verschiedener Audiowiedergabeverfahren
+    Ziel: Evaluation verschiedener Audiowiedergabeverfahren
 
     \vspace{.3cm}
 
@@ -305,44 +305,71 @@ in der Akustik}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Beispiel: Open Science in der Akustik}
 
-    Studien-Ziel: Evaluation verschiedener Audiowiedergabeverfahren
-
     \vspace{.3cm}
 
-    \textbf{Daten}
-    \begin{itemize}
-        \item Datenrepository, z.B. zenodo.org
-        \item Zeige Screenshot
-        \item Gehe darauf ein, dass es noch nicht perfekt ist
-    \end{itemize}
-    \vspace{.2cm}
-    \textbf{Software}
-    \begin{itemize}
-        \item Software Repository, z.B. auf github.org
-        \item Sound Field Synthesis Toolbox
-        \item Gute Idee: nicht nur für ein Paper, sondern allgemeiner und mit
-            Partnern
-    \end{itemize}
-    \vspace{.2cm}
-    \textbf{Methoden}
-    \begin{itemize}
-        \item Skripte für statistische Auswertung veröffentlichen (z.B.
-            zenodo.org, oder github)
-        \item Wäre auch gut, wenn man pro Abbildung den Code mit veröffentlichen
-            würde (Beispiel Diss) [Überleitung Jupyter]
-    \end{itemize}
+    \only<1>{%
+        \textbf{Daten}
+        \begin{itemize}
+            \item Daten-Repository mit doi, z.B.
+                \href{https://zenodo.org}{zenodo.org}
+            \item Noch nicht perfekt (Versionierung, Datengröße)
+        \end{itemize}
+        \vspace{.2cm}
+        \begin{figure}
+            \centering
+            \includegraphics[width=.8\textwidth]{daten}
+        \end{figure}
+    }
+    \only<2>{%
+        \textbf{Software}
+        \begin{itemize}
+            \item Software-Repository, z.B. auf
+                \href{https://github.com}{github.com}
+            \item Software am besten allgemein und mit Partnern entwickeln
+        \end{itemize}
+        \vspace{.2cm}
+        \begin{figure}
+            \centering
+            \includegraphics[width=.8\textwidth]{software}
+        \end{figure}
+    }
+    \only<3>{%
+        \textbf{Methoden}
+        \begin{itemize}
+            \item Skripte für statistische Auswertung veröffentlichen
+            \item Code für einzelne Abbildung veröffentlichen
+        \end{itemize}
+        \vspace{.2cm}
+        \begin{figure}
+            \centering
+            \includegraphics[width=.8\textwidth]{methoden}
+        \end{figure}
+    }
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Publikationen in der Zukunft}
+\begin{frame}{Publizieren in der Zukunft}
 
-    \begin{itemize}
-        \item Code und Daten Teil der Publikation
-        \item Kann weiter entwickelt werden
-    \end{itemize}
+    \textbf{Ziel:} Daten und Code als Teil der Publikation
 
-    Zeige Jupyter-Screenshot als Beispiel
+    \vspace{.3cm}
+
+    \only<1>{%
+        Code und Daten in Publikation verlinkt\vphantom{g}\footnote{%
+        Wierstorf (2014), Dissertation,
+        \href{https://doi.org/10.14279/depositonce-4310}{10.14279/depositonce-4310}}
+    }
+    \only<2>{%
+        Code und Daten in Publikation eingebettet\footnote{%
+        Spors (2016), Digital Signal Processing - Lecture notes,
+        \href{https://github.com/spatialaudio/digital-signal-processing-lecture}{github.com}}
+    }
+    \begin{figure}
+        \centering
+        \only<1>{\includegraphics[width=.8\textwidth]{phd}}
+        \only<2>{\includegraphics[width=.8\textwidth]{jupyter}}
+    \end{figure}
 
 \end{frame}
 
