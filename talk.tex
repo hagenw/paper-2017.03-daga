@@ -149,6 +149,48 @@ in der Akustik}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Auswege}
+
+    \vspace{0.5cm}
+
+    \begin{tabular}{>{\raggedright}p{5.5cm}l}
+        \textbf{Open Science} & \multirow{2}{2cm}{%
+            \includegraphics[width=1cm]{data_dredging}
+            \includegraphics[width=1cm]{omitting_null_results}
+            \includegraphics[width=1cm]{errors}
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        Daten, Software und Methoden & \\[1em]
+        \textbf{Pre-Registrierung} & \multirow{2}{2cm}{%
+            \includegraphics[width=1cm]{data_dredging}
+            \includegraphics[width=1cm]{omitting_null_results}
+            \includegraphics[width=1cm]{underpowered_study}
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        des Versuches (und Review) & \\[1em]
+        \textbf{Zusammenarbeit} & \multirow{2}{*}{%
+            \includegraphics[width=1cm]{underpowered_study}
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        unterschiedlicher Arbeitsgruppen & \\[1em]
+        \textbf{Post-publication review} & \multirow{2}{*}{%
+            \includegraphics[width=1cm]{underspecified_method}
+            \includegraphics[width=1cm]{weak_experimental_design}} \\
+        Diskussion und Verbesserungen & \\[1em]
+        \textbf{Verzicht auf $p$-Werte} & \multirow{2}{*}{%
+            \includegraphics[width=1cm]{data_dredging}
+            \includegraphics[width=1cm]{omitting_null_results}} \\
+        Effektstärke, Konfidenzinterval
+        & \\
+    \end{tabular}
+
+    \vspace{1cm}
+    {\ft Basierend auf The Academy of Medical Sciences (2015), CC
+    BY 4.0, \href{http://apo.org.au/node/58335}{apo.org.au/node/58335}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Statistik}
 
     \textbf{Probleme des $p$-Wertes}
@@ -209,71 +251,29 @@ in der Akustik}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Statistik}
-
-    \begin{figure}
-        \centering
-        \begin{tikzpicture}
-            \only<1>{\draw (0,0) node {\includegraphics[width=7cm]{stat2_1}};}
-            \only<2>{\draw (0,0) node {\includegraphics[width=7cm]{stat2_2}};}
-            \only<3>{\draw (0,0) node {\includegraphics[width=7cm]{stat2_3}};}
-            \draw (2.0,2.5) [right] node {\sm 20 Hypothesen\hphantom{0}};
-            \draw (2.0,2.0) [right] node {\sm Power: $0.4$};
-            \draw (2.0,1.5) [right] node {\sm $p = 0.05$};
-            \draw (1.9,-1.24) [right] node {\sm unwahr};
-            \draw (1.9,-1.70) [right] node {\sm wahr};
-            \draw (1.9,-2.16) [right] node {\sm falsch negativ};
-            \draw (1.9,-2.62) [right] node {\sm falsch positiv};
-            \draw (1.9,-3.08) [right] node {\sm publiziert};
-        \end{tikzpicture}
-    \end{figure}
-
-    \phantom{Basierend auf The Academy of Medical Sciences (2015), CC BY 4.0}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Auswege}
-
-    \vspace{0.5cm}
-
-    \begin{tabular}{>{\raggedright}p{5.5cm}l}
-        \textbf{Open Science} & \multirow{2}{2cm}{%
-            \includegraphics[width=1cm]{data_dredging}
-            \includegraphics[width=1cm]{omitting_null_results}
-            \includegraphics[width=1cm]{errors}
-            \includegraphics[width=1cm]{underspecified_method}
-            \includegraphics[width=1cm]{weak_experimental_design}} \\
-        Daten, Software und Methoden & \\[1em]
-        \textbf{Pre-Registrierung} & \multirow{2}{2cm}{%
-            \includegraphics[width=1cm]{data_dredging}
-            \includegraphics[width=1cm]{omitting_null_results}
-            \includegraphics[width=1cm]{underpowered_study}
-            \includegraphics[width=1cm]{underspecified_method}
-            \includegraphics[width=1cm]{weak_experimental_design}} \\
-        des Versuches (und Review) & \\[1em]
-        \textbf{Zusammenarbeit} & \multirow{2}{*}{%
-            \includegraphics[width=1cm]{underpowered_study}
-            \includegraphics[width=1cm]{underspecified_method}
-            \includegraphics[width=1cm]{weak_experimental_design}} \\
-        unterschiedlicher Arbeitsgruppen & \\[1em]
-        \textbf{Post-publication review} & \multirow{2}{*}{%
-            \includegraphics[width=1cm]{underspecified_method}
-            \includegraphics[width=1cm]{weak_experimental_design}} \\
-        Diskussion und Verbesserungen & \\[1em]
-        \textbf{Verzicht auf $p$-Werte} & \multirow{2}{*}{%
-            \includegraphics[width=1cm]{data_dredging}
-            \includegraphics[width=1cm]{omitting_null_results}} \\
-        Effektstärke, Konfidenzinterval
-        & \\
-    \end{tabular}
-
-    \vspace{1cm}
-    {\ft Basierend auf The Academy of Medical Sciences (2015), CC
-    BY 4.0, \href{http://apo.org.au/node/58335}{apo.org.au/node/58335}}
-
-\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}{Statistik}
+%
+%    \begin{figure}
+%        \centering
+%        \begin{tikzpicture}
+%            \only<1>{\draw (0,0) node {\includegraphics[width=7cm]{stat2_1}};}
+%            \only<2>{\draw (0,0) node {\includegraphics[width=7cm]{stat2_2}};}
+%            \only<3>{\draw (0,0) node {\includegraphics[width=7cm]{stat2_3}};}
+%            \draw (2.0,2.5) [right] node {\sm 20 Hypothesen\hphantom{0}};
+%            \draw (2.0,2.0) [right] node {\sm Power: $0.4$};
+%            \draw (2.0,1.5) [right] node {\sm $p = 0.05$};
+%            \draw (1.9,-1.24) [right] node {\sm unwahr};
+%            \draw (1.9,-1.70) [right] node {\sm wahr};
+%            \draw (1.9,-2.16) [right] node {\sm falsch negativ};
+%            \draw (1.9,-2.62) [right] node {\sm falsch positiv};
+%            \draw (1.9,-3.08) [right] node {\sm publiziert};
+%        \end{tikzpicture}
+%    \end{figure}
+%
+%    \phantom{Basierend auf The Academy of Medical Sciences (2015), CC BY 4.0}
+%
+%\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Beispiel: Open Science in der Akustik}
