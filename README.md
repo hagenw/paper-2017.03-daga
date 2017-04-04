@@ -5,10 +5,10 @@ Germany](http://www.daga2017.de/).
 
 This repository contains [the talk](talk.pdf) and [its sources](talk/).
 
-There is no companion paper available, but you might have a look at the [paper
-Towards Open Science in Acoustics: Foundations and Best
+There is no companion paper available, but you might have a look at the paper
+[Towards Open Science in Acoustics: Foundations and Best
 Practices](https://github.com/spatialaudio/DAGA2017_towards_open_science_in_acoustics/blob/master/paper_towards_open_science_in_acoustics.pdf)
-of our other contribution to this topic.
+from our other contribution to this topic.
 
 The following literature is worth reading to get ideas about the scientific
 method, problems of the *P* value and possible solutions to the reproducibility
